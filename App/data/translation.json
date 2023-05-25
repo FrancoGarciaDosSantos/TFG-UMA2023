@@ -1,0 +1,578 @@
+{
+  "cultural_date_format": "%d-%m-%Y",
+  "languages": ["en", "es"],
+  "translation": [
+    {
+      "en": "Discrete operators", 
+      "es": "Operadores discretos"
+    },
+    {
+      "en": "Binary Operator", 
+      "es": "Operador binario"
+    },
+    {
+      "en": "Matrix", 
+      "es": "Matriz"
+    },
+    {
+      "en": "Analyze matrix", 
+      "es": "Analizar matriz"
+    },
+    {
+      "en": "Matrix by hand", 
+      "es": "Matriz a mano"},
+    {
+      "en": "Matrix by file",
+      "es": "Matriz por archivo"
+    },
+    {
+      "en": "Matrix by formula",
+      "es": "Matriz por formula"
+    },
+    {
+      "en": "Compute",
+      "es": "Calcular"
+    },
+    {
+      "en": "Filter",
+      "es": "Filtrar"
+    },
+    {
+      "en": "User manual",
+      "es": "Manual de usuario"
+    },
+    {
+      "en": "Error in chain/matrix input",
+      "es": "Error en cadena/matriz introducida"
+    },
+    {
+      "en": "Error in chain input",
+      "es": "Error en cadena introducida"
+    },
+    {
+      "en": "Error in matriz input",
+      "es": "Error en matriz introducida"
+    },
+    {
+      "en": "Please select a file:",
+      "es": "Seleccione un archivo:"
+    },
+    {
+      "en": "Select chain length:",
+      "es": "Seleccione longitud de la cadena:"
+    },
+    {
+      "en": "Select length:",
+      "es": "Seleccione longitud:"
+    },
+    {
+      "en": "Enter a vector:",
+      "es": "Introduzca la cadena:"
+    },
+    {
+      "en": "Enter a formula:",
+      "es": "Introduzca la formula:"
+    },
+    {
+      "en": "Clean",
+      "es": "Limpiar"
+    },
+    {
+      "en": "Copy",
+      "es": "Copiar"
+    },
+    {
+      "en": "Paste",
+      "es": "Pegar"
+    },
+    {
+      "en": "Done!",
+      "es": "Hecho!"
+    },
+    {
+      "en": "Click to clean chain",
+      "es": "Clic para limpiar la cadena"
+    },
+    {
+      "en": "Click to copy chain",
+      "es": "Clic para copiar la cadena"
+    },
+    {
+      "en": "Ctrl+V to paste chain",
+      "es": "Ctrl+V para pegar cadena"
+    },
+    {
+      "en": "Fill the matrix:",
+      "es": "Rellene la matriz:"
+    },
+    {
+      "en": "Update values",
+      "es": "Actualizar valores"
+    },
+    {
+      "en": "Download results",
+      "es": "Descargar los resultados"
+    },
+    {
+      "en": "Export",
+      "es": "Exportar"
+    },
+    {
+      "en": "Whitespace",
+      "es": "Espacio"
+    },
+    {
+      "en": "File input",
+      "es": "Nose jaja"
+    },
+    {
+      "en": "Select a file:",
+      "es": "Seleccione un archivo:"
+    },
+    {
+      "en": "Analize",
+      "es": "Analizar"
+    },
+    {
+      "en": "Valid inputs",
+      "es": "Valores admitidos"
+    },
+    {
+      "en": "Valid files and separators",
+      "es": "Archivos y separadores validos"
+    },
+    {
+      "en": "Positive numbers",
+      "es": "Numeros positivos"
+    },
+    {
+      "en": "Non-repeating values",
+      "es": "Valores no repetidos"
+    },
+    {
+      "en": "Integer numbers",
+      "es": "Numeros enteros"
+    },
+    {
+      "en": "Decimal numbers",
+      "es": "Numeros decimales"
+    },
+    {
+      "en": "Fractions",
+      "es": "Fracciones"
+    },
+    {
+      "en": "to move between the same row",
+      "es": "para moverte entre la misma fila"
+    },
+    {
+      "en": "to move between the same column",
+      "es": "para moverte entre la misma columna"
+    },
+    {
+      "en": "Values appearing in the chain",
+      "es": "Valores introducidos en la cadena"
+    },
+    {
+      "en": "Values with redundant left 0's are not allowed",
+      "es": "No se permiten valores con 0's izquierdos redundantes"
+    },
+    {
+      "en": "Files with extension .csv or .txt",
+      "es": "Archivos con extension .csv o .txt"
+    },
+    {
+      "en": "Columns separated by one of the following separators: ",
+      "es": "Columnas separadas por uno de los siguientes separadores: "
+    },
+    {
+      "en": "Rows separated by line break",
+      "es": "Filas separadas por salto de linea"
+    },
+    {
+      "en": "Comma",
+      "es": "Coma"
+    },
+    {
+      "en": "Tab",
+      "es": "Tab"
+    },
+    {
+      "en": "Semicolon",
+      "es": "Punto y Coma"
+    },
+    {
+      "en": "Display matrix row/column indexes",
+      "es": "Mostrar indices de la matriz"
+    },
+    {
+      "en": "Provided chain:",
+      "es": "Cadena leida:"
+    },
+    {
+      "en": "Provided matrix:",
+      "es": "Matriz leida:"
+    },
+    {
+      "en": "Provided formula:",
+      "es": "Formula introducida:"
+    },
+    {
+      "en": "Properties:",
+      "es": "Propiedades:"
+    },
+    {
+      "en": "Classification:",
+      "es": "Clasificación:"
+    },
+    {
+      "en": "Chain length must be equal to",
+      "es": "La longitud debe ser igual a"
+    },
+    {
+      "en": "left",
+      "es": "más"
+    },
+    {
+      "en": "Chain required.",
+      "es": "Cadena necesaria."
+    },
+    {
+      "en": "Formula required.",
+      "es": "Formula necesaria."
+    },
+    {
+      "en": "File required.",
+      "es": "Archivo necesario."
+    },
+    {
+      "en": "File extension is not valid.",
+      "es": "La extension del archivo no es valida."
+    },
+    {
+      "en": "Matrix contains different values from those of the chain:",
+      "es": "La matriz contiene valores diferentes a los de la cadena:"
+    },
+    {
+      "en": "Chain contains duplicated values:",
+      "es": "La cadena contiene valores repetidos:"
+    },
+    {
+      "en": "Matrix contains unsupported values:",
+      "es": "La matriz contiene valores no admitidos:"
+    },
+    {
+      "en": "Chain contains unsupported values:",
+      "es": "La cadena contiene valores no admitidos:"
+    },
+    {
+      "en": "Matrix has unfilled rows.",
+      "es": "La matriz tiene filas incompletas."
+    },
+    {
+      "en": "Chain is unfilled.",
+      "es": "La cadena está incompleta."
+    },
+    {
+      "en": "Matrix is not square.",
+      "es": "La matriz no es cuadrada."
+    },
+    {
+      "en": "Chain length does not match the number of matrix columns.",
+      "es": "La longitud de la cadena no concuerda con el numero de columnas de              la matriz."
+    },
+    {
+      "en": "Matrix has a neutral element.",
+      "es": "La matriz tiene elemento neutro."
+    },
+    {
+      "en": "Matrix has no neutral element.",
+      "es": "La matriz no tiene elemento neutro."
+    },
+    {
+      "en": "The matrix is ascending.",
+      "es": "La matriz es monotona ascendente."
+    },
+    {
+      "en": "The matrix is not ascending.",
+      "es": "La matriz no es monotona ascendente."
+    },
+    {
+      "en": "The commutative property holds.",
+      "es": "Se cumple la propiedad conmutativa."
+    },
+    {
+      "en": "The commutative property does not hold.",
+      "es": "No se cumple la propiedad conmutativa."
+    },
+    {
+      "en": "The associative property holds.",
+      "es": "Se cumple la propiedad asociativa."
+    },
+    {
+      "en": "The associative property does not hold.",
+      "es": "No se cumple la propiedad asociativa."
+    },
+    {
+      "en": "See counterexample",
+      "es": "Ver contraejemplo"
+    },
+    {
+      "en": "See",
+      "es": "Ver"
+    },
+    {
+      "en": "Operator is a:",
+      "es": "El operador es:"
+    },
+    {
+      "en": "Plain text",
+      "es": "Texto plano"
+    },
+    {
+      "en": "File name:",
+      "es": "Nombre del archivo:"
+    },
+    {
+      "en": "Add header?",
+      "es": "Añadir header?"
+    },
+    {
+      "en": "Separator:",
+      "es": "Separador:"
+    },
+    {
+      "en": "Separators",
+      "es": "Separadores"
+    },
+    {
+      "en": "File extension:",
+      "es": "Extension del archivo:"
+    },
+    {
+      "en": "The archimedean property holds.",
+      "es": "Se cumple la propiedad arquimediana."
+    },
+    {
+      "en": "The archimedean property does not hold.",
+      "es": "No se cumple la propiedad arquimediana."
+    },
+    {
+      "en": "The divisibility property holds.",
+      "es": "Se cumple la propiedad de la divisibilidad."
+    },
+    {
+      "en": "The divisibility property does not hold.",
+      "es": "No se cumple la propiedad de la divisibilidad."
+    },
+    {
+      "en": "Choose properties:",
+      "es": "Elige las propiedades deseadas:"
+    },
+    {
+      "en": "Position of the neutral element: ",
+      "es": "Posición del elemento neutro: "
+    },
+    {
+      "en": "Number of matrices to keep: ",
+      "es": "Número de matrices a guardar: "
+    },
+    {
+      "en": "Maximum possible number: 2.000.000",
+      "es": "Maximo número posible: 2.000.000"
+    },
+    {
+      "en": "Choose property to filter by:",
+      "es": "Elige propiedad por la cual filtrar:"
+    },
+    {
+      "en": "Identity element",
+      "es": "Elemento neutro"
+    },
+    {
+      "en": "Increasing monotony",
+      "es": "Monotonia creciente"
+    },
+    {
+      "en": "Commutativity",
+      "es": "Conmutatividad"
+    },
+    {
+      "en": "Associativity",
+      "es": "Asociatividad"
+    },
+    {
+      "en": "Archimedean",
+      "es": "Arquimediana"
+    },
+    {
+      "en": "Divisibility",
+      "es": "Divisibilidad"
+    },
+    {
+      "en": "Maximality",
+      "es": "Maximalidad"
+    },
+    
+    {
+      "en": "It is a t-norm.",
+      "es": "Es una t-norma."
+    },
+    {
+      "en": "It is a t-conorm.",
+      "es": "Es una t-conorma."
+    },
+    {
+      "en": "It is a uninorm.",
+      "es": "Es una uninorma."
+    },
+    {
+      "en": "It is a semicopula.",
+      "es": "Es una  semicopula."
+    },
+    {
+      "en": "It is a conjuntor.",
+      "es": "Es un conjuntor."
+    },
+    {
+      "en": "In addition, it satisfies the following properties: ",
+      "es": "Además, satisface las siguientes propiedades: "
+    },
+    {
+      "en": "It is a binary operator that does not satisfy any property.",
+      "es": "Es un operador binario que no satisface ninguna propiedad."
+    },
+    {
+      "en": "It is a binary operator that satisfies the following properties: ",
+      "es": "Es un operador binario que satisface las siguientes propiedades: "
+    },
+    
+    
+    {
+      "en": "Select a way to compare: ",
+      "es": "Seleccione forma de comparar: "
+    },
+    {
+      "en": "Matrix vs Matrix",
+      "es": "Matriz vs Matriz"
+    },
+    {
+      "en": "Matrix vs List of Matrices",
+      "es": "Matriz vs Lista de matrices"
+    },
+    {
+      "en": "Select a way to enter matrix: ",
+      "es": "Seleccione forma de introducir la matriz: "
+    },
+    {
+      "en": "Via a matrix input",
+      "es": "Matriz a mano"   
+    },
+    {
+      "en": "Via a file input",
+      "es": "Matriz por archivo"
+    },
+    {
+      "en": "Via a formula input",
+      "es": "Matriz por formula"
+    },
+    {
+      "en": "Select side of dominance: ",
+      "es": "Elige lado de la dominancia: "
+    },
+    
+    {
+      "en": "Check values",
+      "es": "Comprobar valores"
+    },
+    {
+      "en": "Compare dominance",
+      "es": "Comparar dominancia"
+    },
+        {
+      "en": "Select file of matrices:",
+      "es": "Selecciona archivo con las matrices:"
+    },
+    {
+      "en": "Matrices dominated by matrix A: ",
+      "es": "Matrices dominadas por la matriz A: "
+    },
+    {
+      "en": "Matrices that dominate matrix A: ",
+      "es": "Matrices que dominan a la matriz A: "
+    },
+    {
+      "en": "Matrices dominated by matrix 1º",
+      "es": "Matrices dominadas por la matriz 1º"
+    },
+    {
+      "en": "Matrices that dominate matrix 1º",
+      "es": "Matrices que dominan a la matriz 1º"
+    },
+    {
+      "en": "Number of matrices in the list: ",
+      "es": "Numero de matrices en la lista: "
+    },
+    {
+      "en": "Number of matrices after being filtered: ",
+      "es": "Numero de matrices filtradas: "
+    },
+    {
+      "en": "Matrix 1º dominates Matrix 2º.",
+      "es": "La matriz 1º domina a la matriz 2º."
+    },
+    {
+      "en": "Matrix 2º dominates Matrix 1º.",
+      "es": "La matriz 2º domina a la matriz 1º."
+    },
+    {
+      "en": "Neither matrix dominates the other.",
+      "es": "Ninguna de las matrices domina a la otra."
+    },
+    {
+      "en": "R object must be a non-empty list.",
+      "es": "El objeto R debe ser una lista no vacia."
+    },
+    {
+      "en": "List must contain only matrices.",
+      "es": "La lista debe contener solo matrices."
+    },
+    {
+      "en": "All matrices must be the same size as the chain.",
+      "es": "Todas las matrices de la lista deben tener el mismo tamaño que la                cadena"
+    },
+    {
+      "en": "File is not formatted as a R object.",
+      "es": "El archivo no es un objeto R."
+    },
+    {
+      "en": "",
+      "es": ""
+    },
+    {
+      "en": "Generate PDF",
+      "es": "Generar PDF"
+    },
+    {
+      "en": "Download as R Object",
+      "es": "Descargar como objeto R"
+    },
+    {
+      "en": "Download",
+      "es": "Descargar"
+    },
+    {
+      "en": "Matrix size",
+      "es": "Tamaño de la matriz"
+    },
+    {
+      "en": "Value of n:",
+      "es": "Valor de n:"
+    },
+    {
+      "en": "Result:",
+      "es": "Resultado:"
+    }
+    
+  ]
+}

@@ -1,0 +1,66 @@
+---
+params:
+  title: NA
+  descripcion: NA
+  formula_titulo: NA
+  formula: NA
+  cadena_titulo: NA
+  cadena_pdf: NA
+  matriz_titulo: NA
+  matriz_pdf: NA
+  propiedades_titulo: NA
+  propiedades: NA
+title: "`r params$title`"
+---
+
+```{r, echo = FALSE}
+
+descripcion = params$descripcion
+formula_titulo = params$formula_titulo
+formula = params$formula
+cadena_titulo = params$cadena_titulo
+cadena = params$cadena_pdf
+matriz_titulo = params$matriz_titulo
+matriz = params$matriz_pdf
+propiedades = params$propiedades
+propiedades_titulo = params$propiedades_titulo
+
+```
+
+
+```{r, code1, results = "asis", echo = FALSE}
+
+cat(descripcion, sep="\n")
+
+if(!is.null(formula)){
+  cat(paste("##", formula_titulo), sep="\n")
+  cat(paste("##", stri_c("$$ ", formula, " $$")  ), sep="\n")
+}
+
+```
+
+## `r cadena_titulo`
+
+`r cadena`
+
+## `r matriz_titulo`
+
+`r matriz`
+
+```{r, code2, results = "asis", echo = FALSE}
+
+if(!is.null(propiedades)){
+  textos = propiedades$text
+  ejemplos = propiedades$example
+  n = length(textos)
+  
+  cat(paste("##", propiedades_titulo), sep="\n")
+  for(i in 1:n){
+    cat(paste("*", textos[i]), sep="\n")
+    if( !is.na(ejemplos[i]) ){
+      cat(ejemplos[i], sep="\n")
+    }
+  }
+}
+
+```

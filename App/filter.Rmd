@@ -1,0 +1,16 @@
+---
+params:
+  matrices: NA
+---
+
+```{r, code1, results = "asis", echo = FALSE}
+matrices <- params$matrices
+matrices <- sapply(matrices, matrix_to_latex_2)
+n <- length(matrices)
+
+for(i in 1:n){
+  cat(paste("---", i), sep = "\n")
+  cat(matrices[[i]], sep = "\n")
+}
+
+```

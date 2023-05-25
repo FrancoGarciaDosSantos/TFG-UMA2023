@@ -1,0 +1,41 @@
+---
+params:
+  matrices: NA
+  prop_name: NA
+  props: NA
+  cadena: NA
+---
+
+```{r, echo = FALSE}
+
+matrices <- params$matrices
+prop_name <- params$prop_name
+props <- params$props
+cadena <- params$cadena
+  
+```
+
+## `r prop_name`
+
+```{r, code1, results = "asis", echo = FALSE}
+
+r <- stri_c(props, collapse = ", ")
+cat(r, sep = "\n")
+
+```
+
+## Matrices:
+
+```{r, code2, results = "asis", echo = FALSE}
+
+matrices <- sapply(matrices, function(x){
+  matrix_to_pdf(x, cadena)
+})
+n <- length(matrices)
+
+for(i in 1:n){
+  cat(paste("---", i), sep = " \n")
+  cat(matrices[[i]], sep = " \n")
+}
+
+```

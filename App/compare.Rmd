@@ -1,0 +1,35 @@
+---
+params:
+  c: NA
+  A: NA
+  lista: NA
+  text_dom: NA
+---
+
+```{r, echo = FALSE}
+
+c <- params$c
+A <- matrix_to_pdf(params$A , c)
+lista <- params$lista
+text_dom <- params$text_dom
+
+```
+
+# Matriz A:
+
+`r A`
+
+# `r text_dom`
+
+```{r, code1, results = "asis", echo = FALSE}
+
+lista <- sapply(lista , function(x) matrix_to_pdf(x, c))
+n <- length(lista)
+
+sapply(1:n, function(i){
+  cat(paste("--", i))
+  cat(lista[i])
+})
+
+```
+
