@@ -15,7 +15,7 @@ downloadUI <- function(id, i18n) {
         ),
         uiOutput(ns("sep_list")),
         awesomeCheckbox(
-          inputId = ns("add_header"), label = tags$b( i18n$t("Add header?") ), 
+          inputId = ns("add_header"), label = tags$b(i18n$t("Add header?")), 
           value = TRUE, status = "success"
         ),
         tags$div(class="right-btn",
@@ -26,9 +26,9 @@ downloadUI <- function(id, i18n) {
                  ))
       ),
       conditionalPanel(condition = "input.format == '.pdf'", ns = ns,
-        textAreaInput(ns("descripcion_pdf"), label = "Description:"),
+        textAreaInput(ns("descripcion_pdf"), label = i18n$t("Description:")),
         awesomeCheckbox(
-         inputId = ns("add_result"), label = tags$b("Add properties?"), 
+         inputId = ns("add_result"), label = tags$b(i18n$t("Add properties?")), 
          value = FALSE, status = "success"
         ),
         tags$div(class="right-btn",

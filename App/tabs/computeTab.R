@@ -18,7 +18,7 @@ calcularTab <-
                        emptyInputBehavior = 0, allowDecimalPadding = FALSE,
                        decimalCharacter = ",", digitGroupSeparator = ".", 
                        align = "left", width = "90%"),
-      helpText(i18n$t("Maximum possible number: 10.000.000")),
+      helpText(span(i18n$t("Maximum possible number: "), "10.000.000")),
       
       tags$div(class="right-btn",
                actionBttn(

@@ -95,14 +95,11 @@ chainServer <- function(id, leng = NULL, i18n = NULL) {
       })
       
       observeEvent(input$copy, {
-        
         onClick = paste0("changeText('",ns('copy'),"','",
                          i18n()$t("Done!"),"')")
         
         shinyjs::runjs(onClick)
-        
         shinyjs::click("clipbtt")
-        #shinyjs::runjs(paste0("document.getElementById('",ns('clipbtt'),"').click();" ))
       })
       
       output$help <- renderUI({
@@ -119,8 +116,7 @@ chainServer <- function(id, leng = NULL, i18n = NULL) {
               </ul>'),
               placement = "bottom",
               html = "true"),
-          #tags$script("$(function () {$('[data-toggle=\"popover\"]').popover()})")
-          )
+          tags$script("$(function () {$('[data-toggle=\"popover\"]').popover()})"))
       })
       
       return(list(

@@ -99,7 +99,8 @@ matrix_to_pdf <- function(matriz, cadena, corner = " "){
 #----------------------------- Funciones check -----------------------------#
 
 title_names <- list("m" = "Error in matriz input", 
-                    "c" = "Error in chain input")
+                    "c" = "Error in chain input",
+                    "f" = "Error in formula input")
 
 check_unique_values <- function(cadena){
   res <- list(valida = TRUE, titulo = NULL, mensaje = NULL)
@@ -247,16 +248,14 @@ get_chain_matrix <- function(cadena_input, matriz_input, tipo, header, show_mInd
   if(!res$valida){ return(res) }
   
   matriz_values <- if(tipo == 3){
-    form_matrix(matriz_input, cadena$values)
-  } else {
-    matrix_to_values(matriz_input)
-  }
+    res <- form_matrix(matriz_input, cadena$values)
+    if(res$valida){ res$matriz } 
+    else { return(res) }
+  } else { matrix_to_values(matriz_input) }
   
   res <- check_values_chain_matrix(cadena$values, matriz_values)
   if(!res$valida){ 
-    if(tipo==3){
-      res$matrix <- matrix_to_latex_2(matriz_values)
-    }
+    if(tipo==3){ res$matrix <- matrix_to_latex_2(matriz_values) }
     return(res)
   }
   
@@ -324,18 +323,33 @@ check_formula <- function(formula){
 }
 
 form_matrix <- function(formula, cadena_v){
-  n = length(cadena_v)
-  matriz <- matrix(0,n,n)
-  
-  for(i in seq(1,n)){
-    for(j in seq(1,n)){
-      x <- cadena_v[i]
-      y <- cadena_v[j]
-      matriz[i,j] <- eval(parse(text=formula))
+  res <- list(valida = TRUE, matriz = NULL, titulo = NULL, mensaje = NULL)
+
+  tryCatch({
+    n <- length(cadena_v)
+    matriz <- matrix(0,n,n)
+    
+    for(i in seq(1,n)){
+      for(j in seq(1,n)){
+        x <- cadena_v[i]
+        y <- cadena_v[j]
+        matriz[i,j] <- eval(parse(text=formula))
+      }
     }
-  }
+    res$matriz <- matriz
+  },
+  error = function(e){ 
+    res$valida <<- FALSE
+    res$titulo <<- title_names$f
+    res$mensaje <<- "Check that the syntax of the formula is correct."
+  },
+  warning = function(w){
+    res$valida <<- FALSE
+    res$titulo <<- title_names$f
+    res$mensaje <<- "Check that the syntax of the formula is correct."
+  })
   
-  return(matriz)
+  return(res)
 }
 
 change_matrix_size = function(matriz, new_n){

@@ -54,6 +54,10 @@
       "es": "Error en matriz introducida"
     },
     {
+      "en": "Error in formula input",
+      "es": "Error en fórmula introducida"
+    },
+    {
       "en": "Please select a file:",
       "es": "Seleccione un archivo:"
     },
@@ -71,7 +75,7 @@
     },
     {
       "en": "Enter a formula:",
-      "es": "Introduzca la formula:"
+      "es": "Introduzca la fórmula:"
     },
     {
       "en": "Clean",
@@ -215,7 +219,7 @@
     },
     {
       "en": "Provided formula:",
-      "es": "Formula introducida:"
+      "es": "Fórmula introducida:"
     },
     {
       "en": "Properties:",
@@ -239,7 +243,7 @@
     },
     {
       "en": "Formula required.",
-      "es": "Formula necesaria."
+      "es": "Fórmula necesaria."
     },
     {
       "en": "File required.",
@@ -338,6 +342,14 @@
       "es": "Añadir header?"
     },
     {
+      "en": "Add properties?",
+      "es": "Añadir propiedades?"
+    },
+    {
+      "en": "Description:",
+      "es": "Descripción:"
+    },
+    {
       "en": "Separator:",
       "es": "Separador:"
     },
@@ -378,8 +390,8 @@
       "es": "Número de matrices a guardar: "
     },
     {
-      "en": "Maximum possible number: 2.000.000",
-      "es": "Maximo número posible: 2.000.000"
+      "en": "Maximum possible number: ",
+      "es": "Maximo número posible: "
     },
     {
       "en": "Choose property to filter by:",
@@ -474,13 +486,12 @@
     },
     {
       "en": "Via a formula input",
-      "es": "Matriz por formula"
+      "es": "Matriz por fórmula"
     },
     {
       "en": "Select side of dominance: ",
       "es": "Elige lado de la dominancia: "
     },
-    
     {
       "en": "Check values",
       "es": "Comprobar valores"
@@ -546,10 +557,6 @@
       "es": "El archivo no es un objeto R."
     },
     {
-      "en": "",
-      "es": ""
-    },
-    {
       "en": "Generate PDF",
       "es": "Generar PDF"
     },
@@ -572,7 +579,22 @@
     {
       "en": "Result:",
       "es": "Resultado:"
+    },
+    {
+      "en": "The formula must be valid according to the R language syntax.",
+      "es": "La fórmula debe ser correcta siguiendo la sintaxis del lenguaje R."
+    },
+    {
+      "en": "Refer to 'x' as the first operand.",
+      "es": "Refiérase a 'x' como el primer operando."
+    },
+    {
+      "en": "Refer to 'y' as the second operand.",
+      "es": "Refiérase a 'y' como el segundo operando."
+    },
+    {
+      "en": "Check that the syntax of the formula is correct.",
+      "es": "Comprueba que la sintaxis de la fórmula sea correcta."
     }
-    
   ]
 }

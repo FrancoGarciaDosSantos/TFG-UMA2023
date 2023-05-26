@@ -120,6 +120,11 @@ server <- function(input, output, session){
   }) # Here is where we update language in session
   
   i18n_m <- reactive({
+    req(input$selected_language)
+    selected <- input$selected_language
+    if (length(selected) > 0 & selected %in% i18n$get_languages()) {
+      i18n$set_translation_language(selected)
+    }
     i18n
   }) #reactive translator object for modules
   
@@ -547,7 +552,7 @@ server <- function(input, output, session){
   
   
   output$filter_options <- renderUI({
-    print(input$matrices_input2)
+  
     prettyRadioButtons(
       inputId = "filter_option", label = i18n$t("Choose property to filter by:"),
       status = "success", shape = "curve",
@@ -566,7 +571,6 @@ server <- function(input, output, session){
 
     matrices <- readRDS(file_path)
 
-  
     res <- check_lista_matrices(matrices)
     if(!res$valida){
       shinyalert(title = i18n$t(res$titulo), 
